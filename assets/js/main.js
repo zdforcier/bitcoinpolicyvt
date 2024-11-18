@@ -34,7 +34,7 @@
 	});
 
 	document.addEventListener('DOMContentLoaded', function() {
-		const words = ['Secure.', 'Sound Money.', 'Accessible.', 'Empowering.', 'Freedom.', 'Decentralized.', 'Permissionless.','Hope.', 'Prosperity.', 'Currency.', 'Progressive.', 'Love.'];
+		const words = ['Hard Money.', 'Accessible.', 'Empowering.', 'Freedom.', 'Decentralized.', 'Permissionless.','Blue Collar.', 'Prosperity.', 'Currency.', 'Progressive.', 'Sustainable.'];
 		let index = 0;
 		const element = document.getElementById('cycle');
 	

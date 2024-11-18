@@ -9,57 +9,98 @@
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
         </head>
-
-        <section id="banner">
-            <h2><strong>Bitcoin Policy Vermont</h2>
+        
             </section>
             
-                <header>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="policy.html">Our Policies</a></li>
-                            <li><a href="bitcoin.html">More About Bitcoin</a></li>
-                            <li><a href="vermont.html">Why Vermont Should Care</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </header>
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="images/logo-modified-2.png" alt="Logo" class="logo-img mr-2">
+                        <h3 class="mb-0">Bitcoin Policy VT</h3>
+                    </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="policy.html">Policies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="bitcoin.html">About Bitcoin</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="vermont.html">Why Vermont</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </header>
 
-                <section id="whatisbitcoin" class="wrapper special">
-                    <div class="inner">
-                    <header class="major">
-                    <h2>What is Bitcoin?</h2>
-                </header>
-                <div class="content-bubbles">
-                    <div class="bubble">
-                        <h3>The Currency</h3>
-                        <p>Bitcoin, as a form of money, represents a decentralized digital currency that operates without the need for a central authority like a government or financial institution. It is based on a peer-to-peer network, where transactions are verified by network nodes through cryptography and recorded on a public ledger called a blockchain. This structure allows Bitcoin to function independently of traditional banking systems, providing a global currency that can be sent and received by anyone with an internet connection, regardless of geographical location.</p>
-                        <div>-</div>
-                        <p>One of Bitcoin's defining characteristics as money is its fixed supply. Unlike fiat currencies, which can be printed in unlimited quantities by governments, Bitcoin has a hard cap of 21 million coins. This scarcity is built into its protocol, making Bitcoin inherently deflationary. As more people adopt and use Bitcoin, the limited supply increases its value, similar to how precious metals like gold have maintained value over time. This fixed supply makes Bitcoin an attractive store of value, preserving purchasing power in the long term.</p>
-                        <div>-</div>
-                        <p>Moreover, Bitcoin is divisible and portable, making it highly practical for everyday transactions. Each Bitcoin can be divided into 100 million smaller units called satoshis, allowing for micro-transactions and making it adaptable to various scales of economic activity. Being digital, Bitcoin can be transferred quickly and securely across the globe, without the need for intermediaries, reducing transaction costs and settlement times. This ease of transfer and security makes Bitcoin not only a store of value but also an efficient medium of exchange.</p>
-                    </div>
-                    <div class="bubble">
-                        <h3>The Idea</h3>
-                        <p>As an idea, Bitcoin represents a profound shift in the way we think about money, freedom, and financial sovereignty. At its core, Bitcoin embodies the principle of decentralization, challenging the traditional financial systems that rely on centralized control by governments and institutions. It offers a vision of a world where individuals have full control over their own wealth, free from the influence of third parties. This decentralization empowers people to transact and store value without needing to trust or rely on intermediaries, fundamentally altering the dynamics of financial power.</p>
-                        <div>-</div>
-                        <p>Bitcoin also represents the idea of transparency and trust through technology. In a world where financial systems are often opaque and prone to manipulation, Bitcoin's blockchain provides a transparent and immutable record of all transactions. This public ledger is accessible to anyone, ensuring that trust is built not on authority or reputation, but on open, verifiable data. The trustless nature of Bitcoin means that transactions can occur between parties who have never met, without the need for a middleman, fostering a new kind of digital trust built on cryptography and consensus mechanisms.</p>
-                        <div>-</div>
-                        <p>Beyond its technical attributes, Bitcoin symbolizes the potential for financial inclusion and innovation. It represents a global, open financial system that is accessible to anyone, regardless of their location, economic status, or political environment. In this way, Bitcoin transcends borders, offering a form of financial participation to billions of people who are unbanked or underbanked. The idea of Bitcoin challenges existing structures and encourages innovation in financial technology, pushing the boundaries of what is possible in creating a more equitable and inclusive global economy.</p>
-                    </div>
-                </div>
+            <div class="title-container">
+                <h2>Bringing Sound Money to the Green Mountains</h2>
             </div>
-        </section>
+
+              <section id="about-us" class="card-body">
+                <div class="inner">
+                    <header class="major">
+                        <h2 class="text-center">What is Bitcoin?</h2>
+                    </header>
+        
+                    <div class="col-12 mb-4" data-aos="fade-up" data-aos-duration="700">
+                      <div class="card p-4">
+                      <h3>The Currency</h3>
+                        <p>Bitcoin, as a form of money, represents a decentralized digital currency that operates without the need for a central authority like a government or financial institution. It is based on a peer-to-peer network, where transactions are verified by network nodes through cryptography and recorded on a public ledger called a blockchain. This structure allows Bitcoin to function independently of traditional banking systems, providing a global currency that can be sent and received by anyone with an internet connection, regardless of geographical location.</p>
+                        <p>One of Bitcoin's defining characteristics as money is its fixed supply. Unlike fiat currencies, which can be printed in unlimited quantities by governments, Bitcoin has a hard cap of 21 million coins. This scarcity is built into its protocol, making Bitcoin inherently deflationary. As more people adopt and use Bitcoin, the limited supply increases its value, similar to how precious metals like gold have maintained value over time. This fixed supply makes Bitcoin an attractive store of value, preserving purchasing power in the long term.</p>
+                        <p>Moreover, Bitcoin is divisible and portable, making it highly practical for everyday transactions. Each Bitcoin can be divided into 100 million smaller units called satoshis, allowing for micro-transactions and making it adaptable to various scales of economic activity. Being digital, Bitcoin can be transferred quickly and securely across the globe, without the need for intermediaries, reducing transaction costs and settlement times. This ease of transfer and security makes Bitcoin not only a store of value but also an efficient medium of exchange.</p>
+                        <p>At Bitcoin Policy Vermont, we are dedicated to educating the public about the importance of Bitcoin and its potential to transform Vermont’s economy and society.</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 mb-4" data-aos="fade-up" data-aos-duration="700">
+                      <div class="card p-4">
+                      <h3>The Idea</h3>
+                        <p>As an idea, Bitcoin represents a profound shift in the way we think about money, freedom, and financial sovereignty. At its core, Bitcoin embodies the principle of decentralization, challenging the traditional financial systems that rely on centralized control by governments and institutions. It offers a vision of a world where individuals have full control over their own wealth, free from the influence of third parties. This decentralization empowers people to transact and store value without needing to trust or rely on intermediaries, fundamentally altering the dynamics of financial power.</p>
+                        <p>Bitcoin also represents the idea of transparency and trust through technology. In a world where financial systems are often opaque and prone to manipulation, Bitcoin's blockchain provides a transparent and immutable record of all transactions. This public ledger is accessible to anyone, ensuring that trust is built not on authority or reputation, but on open, verifiable data. The trustless nature of Bitcoin means that transactions can occur between parties who have never met, without the need for a middleman, fostering a new kind of digital trust built on cryptography and consensus mechanisms.</p>
+                        <p>Beyond its technical attributes, Bitcoin symbolizes the potential for financial inclusion and innovation. It represents a global, open financial system that is accessible to anyone, regardless of their location, economic status, or political environment. In this way, Bitcoin transcends borders, offering a form of financial participation to billions of people who are unbanked or underbanked. The idea of Bitcoin challenges existing structures and encourages innovation in financial technology, pushing the boundaries of what is possible in creating a more equitable and inclusive global economy.</p>
+                        </div>
+                    </div>
+        
+    
+                     <div class="container video-section">
+                        <h3>Bitcoin on a Technical Level</h3>
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-12">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bBC-nXj3Ng4?si=ftcKhbpLTX3p8Z4a"
+                                            title="YouTube video player" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
 
     <body>
-        <section id="library" class="wrapper special">
-            <div class="inner">
+        <section id="library" class="card-body">
+            <div class="container">
                 <header class="major">
-                    <p id="bodytwo">Article library</p>
+                    <h2 id="bodytwo">Article Library</h2>
                     <h3 class="alt-heading">Explore external articles related to Bitcoin.</h3>
                 </header>
                 <div class="gallery">
@@ -83,13 +124,13 @@
                     </div>
                     <div class="article-item">
                         <a href="https://mises.org/online-book/what-has-government-done-our-money" target="_blank">
-                            <img src="images/Mises-Institute_Sign_20240418.jpg.jpeg" alt="What Has Government Done to Our Money?">
+                            <img src="images/Mises-Institute_Sign_20240418.jpeg" alt="What Has Government Done to Our Money?">
                             <h3>What Has Government Done to Our Money?</h3>
                         </a>
                     </div>
                     <div class="article-item">
                         <a href="https://mises.org/library/book/origins-money" target="_blank">
-                            <img src="images/originsofmoney.jpg" alt="On the Origins of Money">
+                            <img src="images/origins-of-money.jpeg" alt="On the Origins of Money">
                             <h3>On the Origins of Money</h3>
                         </a>
                     </div>
@@ -110,9 +151,9 @@
                             <h3>Everyone is Short Dollars</h3>
                         </a>
                     </div><div class="article-item">
-                        <a href="https://nakamotoinstitute.org/mempool/hyperbitcoinization/" target="_blank">
-                            <img src="images/BitcoinFace.jpeg" alt="Hyperbitcoinization">
-                            <h3>Hyperbitcoinization</h3>
+                        <a href="https://nakamotoinstitute.org/mempool/gradually-then-suddenly/" target="_blank">
+                            <img src="images/gradually.jpg" alt="Gradually Then Suddenly">
+                            <h3>Gradually, Then Suddenly</h3>
                         </a>
                     </div><div class="article-item">
                         <a href="https://static1.squarespace.com/static/5720adbdc6fc0891cbcce17c/t/5f59f34e35e751014cc2bd40/1599730514889/Graf+commodity+Bitcoin-dr.pdf" target="_blank">
@@ -132,11 +173,15 @@
                 </div>
             </div>
         </section>
-    </body>
-    </html>
     
-    <section id="copyright" class="wrapper style2 special">
-    Advocating For Bitcoin Since Block 857398  
+    </section>
 
+    <section id="copyright" class="banner"> Advocating For Bitcoin Since Block 857398</section>
+    <section id="copyright" class="banner"> Version 1.0.1</section>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    </body>
     
 <html>

@@ -1,53 +1,115 @@
 <!DOCTYPE HTML>
+<html lang="en">
 
-<html>
-   
 <head>
-
-	<title>Bitcoin Policy Vermont</title>
-	<meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Bitcoin Policy Vermont</title>
 </head>
 
-</body>
-    <section id="banner">
-        <h2><strong>Bitcoin Policy Vermont</h2>
-        </section>
+<body>
 
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="policy.html">Our Policies</a></li>
-                        <li><a href="bitcoin.html">More About Bitcoin</a></li>
-                        <li><a href="vermont.html">Why Vermont Should Care</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
+    </section>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <img src="images/logo-modified-2.png" alt="Logo" class="logo-img mr-2">
+              <h3 class="mb-0">Bitcoin Policy VT</h3>
+          </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="policy.html">Policies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bitcoin.html">About Bitcoin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vermont.html">Why Vermont</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+      <div class="title-container">
+        <h2>Bringing Sound Money to the Green Mountains</h2>
+      </div>
+
+    <section id="main" class="card-body">
+        <div class="inner">
+          <div class="col-12 mb-4">
+            <h1 class="text-center">Contact Us</h1>
+            <div class="card p-4">
+            <header class="major">
+                <h3 class="text-left">Email us with any questions, comments, or suggestions.<h3>
             </header>
+          </div>
+        </div>
 
-            <section id="about-us" class="wrapper special">
-                <div class="inner">
-                <header class="major">
-                <h2>About Us</h2>
-            </header>
-            <div class="content-bubbles">
-                <div class="bubble">
-                    <h3>Our Mission</h3>
-                    <p>At Bitcoin Policy Vermont, we are dedicated to educating the public about the importance of Bitcoin and its potential to transform Vermont’s economy and society.</p>
-                </div>
-                <div class="bubble">
-                    <h3>Our Vision</h3>
-                    <p>We envision a future where Vermont leads the nation in adopting and integrating Bitcoin into everyday life, empowering individuals and communities to achieve financial sovereignty.</p>
-                </div>
-        </section>
-    
-    <section id="copyright" class="wrapper style2 special">
-    Advocating For Bitcoin Since Block 857398 
+        <form action="send_mail.php" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
+
+    <section id="main" class="card-body">
+      <div class="inner">
+        <div class="col-12 mb-4">
+          <h1 class="text-center">Donations</h1>
+          <div class="card p-4">
+          <header class="major">
+              <h3 class="text-left"><span style="color: #f7931a;">Address:</span> bc1qzjlhswruxj734q6ss8jcz9g0yer9utt5yu0lne<h3>
+          </header>
+        </div>
+      </div>
+    <section></section>
+
+    <section>
+        <div class="container">
+            <div class="counter-display">
+                <h3><span id="visit-count">...</span></>
+            </div>
+        </div>
+        <script>
+            function fetchVisitCount() {
+                fetch('counter.php')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('visit-count').textContent = data;
+                    })
+                    .catch(error => console.error('Error fetching visit count:', error));
+            }
+            window.onload = fetchVisitCount;
+        </script>
+      </div>
+    </section>
+
+    <section id="copyright" class="banner"> Advocating For Bitcoin Since Block 857398</section>
+    <section id="copyright" class="banner"> Version 1.0.1</section>
 
 </body>
-    
+
 </html>
